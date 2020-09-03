@@ -33,7 +33,9 @@ db, err = sql.Open("mysql", "<root>:<password>@/<dbname>")
 // Replace with 
 db, err = sql.Open("mysql", "myUsername:myPassword@/myDatabase")
 ```
-
+```go
+Other db connect for your mysql port: db, err = sql.Open("mysql", "root:root@tcp(localhost:8889)/golang_auth")
+```
 
 
 
